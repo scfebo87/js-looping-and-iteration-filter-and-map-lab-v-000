@@ -11,3 +11,9 @@ function exactMatch(array, object) {
   key = Object.keys(object)[0];
   return array.filter(name => name[key] === object[key]);
 }
+
+function exactMatchToList(array, object) { 
+  const newArray = exactMatch(array, object); 
+  newArray.map(name => name.name); 
+}
+  
