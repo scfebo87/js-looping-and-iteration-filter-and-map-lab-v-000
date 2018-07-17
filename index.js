@@ -3,6 +3,6 @@ function driversWithRevenueOver(array, revenue) {
 }
   
 function driverNamesWithRevenueOver(array, revenue) { 
-  const newArray = d
-  return array.map(name => name.revenue > revenue);
+  const newArray = driversWithRevenueOver(array, revenue)
+  return newArray.map(name => name.name);
 }
